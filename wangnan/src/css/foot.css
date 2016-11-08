@@ -1,0 +1,243 @@
+@import url("reset.css");
+html, body, .wrap {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  overflow: hidden; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.woff") format("woff"); }
+.header {
+  width: 100%;
+  height: .88rem;
+  background: #3bbe7a;
+  position: relative; }
+  .header h1 {
+    width: 100%;
+    height: .88rem;
+    line-height: .88rem;
+    text-align: center;
+    font-size: .36rem;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'iconfont'; }
+  .header span {
+    width: .88rem;
+    height: .88rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/left.png) no-repeat;
+    background-size: .23rem .36rem;
+    background-position: .23rem center; }
+
+.main {
+  -webkit-flex: 1;
+  overflow: hidden; }
+  .main .con {
+    width: 100%;
+    padding: .15rem;
+    display: -webkit-flex; }
+    .main .con div {
+      width: 50%;
+      padding: .1rem;
+      -webkit-flex: 1; }
+      .main .con div dl {
+        width: 100%; }
+        .main .con div dl img {
+          width: 100%; }
+        .main .con div dl h1 {
+          color: #535353;
+          height: .72rem;
+          line-height: .72rem;
+          font-weight: 300; }
+        .main .con div dl p {
+          width: 2rem;
+          word-break: keep-all;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: .2rem;
+          color: #999999; }
+        .main .con div dl dd {
+          height: 1.2rem;
+          position: relative; }
+        .main .con div dl span {
+          width: .27rem;
+          height: .26rem;
+          background: url(../img/car.png) no-repeat;
+          background-size: 100% 100%;
+          position: absolute;
+          right: 0px;
+          bottom: .25rem; }
+  .main .top {
+    width: 100%;
+    padding: .2rem .25rem; }
+    .main .top .ban {
+      width: 100%;
+      height: 4.2rem; }
+      .main .top .ban img {
+        width: 100%;
+        heiht: 100%; }
+    .main .top h1 {
+      width: 100%;
+      height: .74rem;
+      line-height: .74rem;
+      font-weight: 300;
+      font-size: .26rem;
+      position: relative; }
+      .main .top h1 p {
+        font-size: .16rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #ff3f11; }
+    .main .top .pj {
+      display: -webkit-flex;
+      font-size: .22rem;
+      color: #999; }
+      .main .top .pj p {
+        margin-right: .3rem; }
+      .main .top .pj span {
+        width: .22rem;
+        height: .21rem;
+        background: url(../img/star.png) no-repeat;
+        background-size: 100% 100%;
+        display: inline-block;
+        margin-left: .05rem; }
+      .main .top .pj .on {
+        background: url(../img/starm.png) no-repeat;
+        background-size: 100% 100%; }
+      .main .top .pj p:nth-of-type(3) span {
+        width: .23rem;
+        height: .23rem;
+        background: url(../img/zhong.png) no-repeat;
+        background-size: 100% 100%; }
+  .main .yh {
+    width: 100%;
+    height: 1.38rem;
+    padding: .16rem;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between; }
+    .main .yh dl:nth-of-type(1) dt {
+      width: 1.02rem;
+      height: 1.02rem;
+      float: left; }
+      .main .yh dl:nth-of-type(1) dt img {
+        width: 100%;
+        height: 100%; }
+    .main .yh dl:nth-of-type(1) dd {
+      float: left;
+      line-height: 1.02rem;
+      text-indent: .24rem;
+      width: 1.27rem;
+      word-break: keep-all;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: .2rem; }
+    .main .yh dl:nth-of-type(2) dt {
+      float: left;
+      padding: .2rem 0; }
+      .main .yh dl:nth-of-type(2) dt img {
+        width: .58rem;
+        height: .58rem;
+        margin-right: 5px; }
+    .main .yh dl:nth-of-type(2) dd {
+      float: left;
+      line-height: 1.07rem;
+      font-size: .16rem;
+      color: #ff3f11;
+      text-align: right; }
+  .main nav {
+    width: 100%;
+    height: 1.08rem;
+    border-top: .2rem #e8e8e8 solid;
+    line-height: .88rem; }
+    .main nav ul {
+      display: -webkit-flex; }
+      .main nav ul li {
+        -webkit-flex: 1;
+        border-bottom: 1px #ccc solid;
+        text-align: center;
+        font-szie: .3rem;
+        color: #737373; }
+      .main nav ul .bg {
+        border-bottom: 2px #ff3f11 solid;
+        color: #ff3f11; }
+  .main .box {
+    width: 100%;
+    height: 11rem;
+    position: relative; }
+    .main .box section {
+      width: 100%;
+      position: absolute;
+      left: 100%;
+      top: 0;
+      transition: left .5s;
+      background: #fff;
+      padding: 0 .25rem; }
+    .main .box section:nth-of-type(2) {
+      left: 0; }
+      .main .box section:nth-of-type(2) h1 {
+        width: 100%;
+        height: .74rem;
+        line-height: .84rem;
+        font-weight: 300;
+        font-size: .24rem;
+        color: #585858; }
+      .main .box section:nth-of-type(2) p {
+        line-height: .44rem;
+        font-size: .18rem;
+        color: #adadad; }
+      .main .box section:nth-of-type(2) .picc {
+        display: -webkit-flex;
+        margin-top: .2rem; }
+        .main .box section:nth-of-type(2) .picc img {
+          width: 50%;
+          height: 2.86rem;
+          padding: 5px; }
+
+.footer {
+  width: 100%;
+  height: .88rem;
+  background: #fff; }
+  .footer ul {
+    display: -webkit-flex; }
+    .footer ul li {
+      -webkit-flex: 1;
+      font-family: 'iconfont';
+      text-align: center;
+      font-size: .2rem;
+      color: #6d6d6d; }
+    .footer ul li:before {
+      content: "\f0e5";
+      color: #3bbe7a;
+      display: block;
+      font-size: .4rem;
+      margin: .05rem 0; }
+    .footer ul li:nth-of-type(2):before {
+      content: "\f093"; }
+    .footer ul li:nth-of-type(3) {
+      background: #3bbe7a;
+      color: #fff;
+      line-height: .88rem;
+      font-size: .28rem;
+      position: relative;
+      text-indent: 2em; }
+    .footer ul li:nth-of-type(3):before {
+      content: "\f006";
+      display: inline;
+      color: #fff;
+      font-size: .5rem;
+      margin: 0 .1rem;
+      position: absolute;
+      left: .5rem;
+      top: .43rem;
+      line-height: 0;
+      text-indent: 0; }
+
+/*# sourceMappingURL=foot.css.map */

@@ -1,0 +1,78 @@
+@import url("reset.css");
+html, body, .wrap {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  overflow: hidden; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.woff") format("woff"); }
+.header {
+  width: 100%;
+  height: .88rem;
+  background: #3bbe7a;
+  position: relative; }
+  .header h1 {
+    width: 100%;
+    height: .88rem;
+    line-height: .88rem;
+    text-align: center;
+    font-size: .36rem;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'iconfont'; }
+  .header span {
+    width: .88rem;
+    height: .88rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/left.png) no-repeat;
+    background-size: .23rem .36rem;
+    background-position: .23rem center; }
+
+.main {
+  -webkit-flex: 1;
+  overflow: hidden; }
+  .main .top {
+    width: 100%;
+    padding: .25rem; }
+    .main .top li {
+      width: 100%;
+      height: .5rem;
+      margin-top: .4rem;
+      border-bottom: 1px #ccc solid;
+      line-height: .5rem;
+      display: -webkit-flex; }
+      .main .top li span {
+        font-size: .22rem;
+        color: #999;
+        display: inline-block;
+        margin-right: 5px; }
+      .main .top li input {
+        -webkit-flex: 1;
+        font-size: .22rem;
+        border: none;
+        outline: none; }
+      .main .top li input:focus::-webkit-input-placeholder {
+        color: #ccc; }
+      .main .top li span:nth-of-type(2) {
+        color: #333; }
+  .main .btn {
+    width: 100%;
+    height: .7rem;
+    padding: 0 1.24rem;
+    margin-top: 1.1rem; }
+    .main .btn button {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      border: none;
+      color: #fff;
+      background: #3bbe7a;
+      outline: none; }
+
+/*# sourceMappingURL=forget.css.map */

@@ -1,0 +1,156 @@
+@import url("reset.css");
+html,body,.wrap{
+	width:100%;
+	height:100%;
+	background:#e8e8e8;
+	display:-webkit-flex;
+	-webkit-flex-direction:column;
+	overflow:hidden;
+}
+
+@font-face {
+  	font-family:'iconfont';
+  	src:url('../fonts/fontawesome-webfont.ttf') format("truetype"),
+  		url('../fonts/fontawesome-webfont.woff') format("woff");
+}
+
+
+
+.header{
+	width:100%;
+	height:.88rem;
+	background:#3bbe7a;
+	position:relative;
+	h1{
+		width:100%;
+		height:.88rem;
+		line-height:.88rem;
+		text-align:center;
+		font-size:.36rem;
+		font-weight:300;
+		color:#fff;
+		font-family:'iconfont';
+	}
+	h1:after{
+		content:"\f107";
+		padding:0 2px;
+	}
+	span{
+		width:.88rem;
+		height:.88rem;
+		position:absolute;
+		left:0;
+		top:0;
+		background:url(../img/left.png) no-repeat;
+		background-size:.23rem .36rem;
+		background-position:.23rem center;
+	}
+}
+
+
+	.top{
+		width:100%;
+		height:.6rem;
+		padding:.1rem .25rem;
+		input{
+			width:100%;
+			height:100%;
+			border-radius:10px;
+			border:none;
+			background:url(../img/se.png) no-repeat,#fff;
+			background-size:.26rem .26rem;
+			background-position:.2rem center;
+			font-size:.18rem;
+			text-indent:.6rem;
+		}
+	}
+
+.main{
+	-webkit-flex:1;
+	overflow:hidden;
+	.ban{
+		width:100%;
+		height:1.88rem;
+		img{
+			width:100%;
+			height:100%;
+		}
+	}
+	.city{
+		background:#fff;
+		margin-bottom:.2rem;
+		h1{
+			height:.68rem;
+			line-height:.68rem;
+			font-size:.26rem;
+			color:#333;
+			font-weight:300;
+			text-indent:.26rem;
+		}
+		ul{
+			width:100%;
+			padding:0 .18rem;
+			display:-webkit-flex;
+			-webkit-flex-wrap:wrap;
+			li{
+				width:1.55rem;
+				height:.8rem;
+				margin-left:.2rem;
+				background:#f6f6f6;
+				text-align:center;
+				line-height:.8rem;
+				margin-bottom:.24rem;
+				font-size:.28rem;
+				color:#999;
+			}
+			.on{
+				background:#d2f6e3;
+				color:#333;
+			}
+		}
+	}
+	.time{
+		width:100%;
+		background:#fff;
+		h1{
+			width:100%;
+			height:.7rem;
+			line-height:.7rem;
+			background:url(../img/time_bg.png) no-repeat;
+			background-size:.32rem .33rem;
+			background-position:.25rem center;
+			font-size:.28rem;
+			font-weight:300;
+			color:#ff490b;
+			text-indent:.75rem;
+			border-bottom:1px #e8e8e8 solid;
+		}
+		.pic{
+			padding:.25rem;
+			display:-webkit-flex;
+			-webkit-flex-wrap:wrap;
+			dl{
+				width:3.2rem;
+				dt{
+					width:3.2rem;
+					height:2.2rem;
+					img{
+						width:100%;
+						height:100%;
+					}
+				}
+				dd{
+					height:.64rem;
+					line-height:.64rem;
+					font-size:.26rem;
+					color:#333;
+					color:#333;
+					text-align:center;
+				}
+			}
+			dl:nth-child(even){
+				margin-left:.6rem;
+			}
+		}
+	}
+}
